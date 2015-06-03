@@ -38,9 +38,18 @@ mv $OMZ/themes_new $OMZ/themes
 rm -fr $OMZ/.git
 
 # Install common sanity
+brew tap homebrew/dupes
 brew update
 brew upgrade
 brew install vim wget curl tree go node python
+
+# Newer OpenSSH
+brew install openssh --with-brewed-openssl --with-keychain-support
+launchctl stop org.openbsd.ssh-agent
+launchctl unload -w /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
+sed -i .bak 's|/usr/bin/ssh-agent|/usr/local/bin/ssh-agent|' /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
+launchctl load -w -S Aqua /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
+/usr/local/bin/ssh-keygen -t ed25519
 
 # Install python packages
 pip install pygments requests

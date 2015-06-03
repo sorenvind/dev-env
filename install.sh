@@ -55,3 +55,4 @@ cp -f soren.ssh.config ~/.ssh/config
 #echo "  Use solarized-dark-sovi.terminal as your terminal default colors."
 
 echo "Setup terminal to use Pro template, with Input Mono Extra Light 12pt and block cursor."
+echo "Also (IMPORTANT): uncheck 'set locale environment variables on startup' under advanced in the terminal settings."

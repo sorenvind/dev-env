@@ -81,3 +81,5 @@ source $ZSH/oh-my-zsh.sh
 #
 
 DEFAULT_USER="svi"
+export LC_ALL="en_US.UTF-8"
+

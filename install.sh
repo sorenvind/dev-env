@@ -49,6 +49,7 @@ launchctl stop org.openbsd.ssh-agent
 launchctl unload -w /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
 sed -i .bak 's|/usr/bin/ssh-agent|/usr/local/bin/ssh-agent|' /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
 launchctl load -w -S Aqua /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
+launchctl start org.openbsd.ssh-agent
 /usr/local/bin/ssh-keygen -t ed25519
 
 # Install python packages

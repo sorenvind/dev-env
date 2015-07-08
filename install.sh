@@ -26,22 +26,11 @@ then
   curl -L http://install.ohmyz.sh | sh
 fi
 
-# Slim down unneeded themes and plugins from oh-my-zsh
-mkdir -p $OMZ/plugins_new
-cp -R $OMZ/plugins/colorize $OMZ/plugins/git $OMZ/plugins/common-aliases $OMZ/plugins_new
-rm -fr $OMZ/plugins
-mv $OMZ/plugins_new $OMZ/plugins
-mkdir -p $OMZ/themes_new
-cp -R $OMZ/themes/robbyrussell.zsh-theme $OMZ/themes_new
-rm -fr $OMZ/themes
-mv $OMZ/themes_new $OMZ/themes
-rm -fr $OMZ/.git
-
 # Install common sanity
 brew tap homebrew/dupes
 brew update
 brew upgrade
-brew install vim wget curl tree go node python
+brew install vim wget curl tree go node python ruby make git
 
 # Newer OpenSSH
 brew install openssh --with-brewed-openssl --with-keychain-support

@@ -80,6 +80,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-DEFAULT_USER="svi"
+fpath=(/usr/local/share/zsh-completions $fpath)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+DEFAULT_USER="sv"
 export LC_ALL="en_US.UTF-8"
+export PATH="/usr/local/sbin:$PATH"
+
+ulimit -S -n 10000
+
+export ISSUU_ENV_NAME="dev"
 

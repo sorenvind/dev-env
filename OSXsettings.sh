@@ -19,10 +19,10 @@ defaults write com.apple.dock show-process-indicators -bool true
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 #Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0.02
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 #Set a shorter Delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 #Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true

@@ -1,0 +1,7 @@
+[user]
+# Please adapt and uncomment the following lines:
+  name = sv
+  email = sv@issuu.com
+[push]
+  default = simple
+

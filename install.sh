@@ -18,6 +18,11 @@ then
   brew install caskroom/cask/brew-cask
 fi
 
+# Install own utilities
+mkdir ~/bin
+cp -f git-subdir-status.sh ~/bin/
+chmod +x ~/bin/*
+
 # Install latest zsh and oh-my-zsh
 OMZ=~/.oh-my-zsh
 if test ! -d $OMZ
@@ -32,23 +37,28 @@ brew update
 brew upgrade
 brew install vim wget curl tree go node python ruby make git
 
-# Newer OpenSSH
-brew install openssh --with-brewed-openssl --with-keychain-support
-launchctl stop org.openbsd.ssh-agent
-launchctl unload -w /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
-sed -i .bak 's|/usr/bin/ssh-agent|/usr/local/bin/ssh-agent|' /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
-launchctl load -w -S Aqua /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
-launchctl start org.openbsd.ssh-agent
-/usr/local/bin/ssh-keygen -t ed25519
-
 # Install python packages
-pip install pygments requests
+pip install pygments requests virtualenv
 
 # Install zshrc and vim config
 cp -f soren.vimrc ~/.vimrc
 cp -f soren.zshrc ~/.zshrc
 mkdir -p ~/.ssh
 cp -f soren.ssh.config ~/.ssh/config
+cp -f soren.gitconfig ~/.gitconfig
+
+# Install Real Apps [tm]!
+brew cask install caskroom/homebrew-versions/java6
+brew cask install google-chrome
+brew cask install textmate
+brew cask install intellij-idea
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install gitup
+brew cask install moom
+
+
+## TODO: Moom Configuration, Intellij Configuration, Terminal Configuration
 
 #echo "Install solarized terminal template to finish installation:"
 #echo "  Use solarized-dark-sovi.terminal as your terminal default colors."

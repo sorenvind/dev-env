@@ -85,7 +85,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 DEFAULT_USER="sv"
 export LC_ALL="en_US.UTF-8"
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 
 ulimit -S -n 10000
 

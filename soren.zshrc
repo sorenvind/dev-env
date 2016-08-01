@@ -89,5 +89,3 @@ export PATH="$HOME/bin:/usr/local/sbin:$PATH"
 
 ulimit -S -n 10000
 
-export ISSUU_ENV_NAME="dev"
-

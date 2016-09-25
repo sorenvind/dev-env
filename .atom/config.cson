@@ -1,0 +1,56 @@
+"*":
+  "atom-beautify": {}
+  "atom-ternjs": {}
+  "autocomplete-python":
+    caseInsensitiveCompletion: false
+    pythonPaths: "$PROJECT/_venv/bin/python;/usr/local/bin/python"
+  core:
+    disabledPackages: [
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".*.made"
+      "*.pyc"
+      "__pycache__"
+      ".cache"
+      ".envy"
+    ]
+    projectHome: "/Users/skovhus/git"
+    themes: [
+      "one-dark-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    fontSize: 12
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  linter:
+    errorPanelHeight: 100
+    lintOnFlyInterval: 2000
+    showErrorInline: false
+  "linter-eslint":
+    fixOnSave: true
+  "linter-pep8":
+    convertAllErrorsToWarnings: false
+    ignoreErrorCodes: [
+      "W503"
+    ]
+    maxLineLength: 100
+  "linter-pylint":
+    executable: "%p/_venv/bin/pylint"
+    pythonPath: "%p,%f"
+    rcFile: "%p/pylint.cfg"
+  "one-dark-ui": {}
+  "python-tools": {}
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

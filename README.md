@@ -1,9 +1,8 @@
 # dev-env
 
-My Development Environment.
+My OS X development environment.
 
-Almost everything is set up in a meaningful way, but there is a manual step remaining (setting the correct font/color combination in the terminal).
+Bit and pieces stolen from (sorenvind/dev-env)[https://github.com/sorenvind/dev-env].
 
-Suggested Apps from the App Store:
-- Byword (http://bywordapp.com/)
-
+Run:
+    ./install.sh

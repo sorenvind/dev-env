@@ -1,0 +1,13 @@
+[alias]
+    push = push -u
+# TODO:
+# [user]
+#     name =
+#     email =
+[push]
+    default = current
+    followTags = true
+[core]
+    editor = nano
+[git-up "fetch"]
+    prune = true

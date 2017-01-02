@@ -38,17 +38,23 @@ fi
 brew tap homebrew/dupes
 brew update
 brew upgrade
-brew install vim wget curl tree go node python ruby make git zsh-syntax-highlighting
+brew install vim wget curl tree go node pstree python ruby make git zsh-syntax-highlighting
+brew install cmake asio python 
 
 # Install python packages
 pip install pygments requests virtualenv
 
-# Install zshrc and vim config
+# Build tools++
+brew install cmake asio libconfig
+pip install cheetah
+
+# Install dot configs
 cp -f soren.vimrc ~/.vimrc
 cp -f soren.zshrc ~/.zshrc
 mkdir -p ~/.ssh
 cp -f soren.ssh.config ~/.ssh/config
 cp -f soren.gitconfig ~/.gitconfig
+cp -f soren.gitignore_global ~/.gitignore_global
 
 # Install Real Apps [tm]!
 #brew cask install caskroom/homebrew-versions/java6

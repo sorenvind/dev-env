@@ -39,7 +39,7 @@ brew tap homebrew/dupes
 brew update
 brew upgrade
 brew install vim wget curl tree go node pstree python ruby make git zsh-syntax-highlighting
-brew install cmake asio python 
+brew install cmake asio python
 
 # Install python packages
 pip install pygments requests virtualenv
@@ -67,6 +67,7 @@ brew cask install gitup
 brew cask install moom
 brew cask install slack
 brew cask install atom
+brew cask install intel-power-gadget
 
 
 ## TODO: Moom Configuration, Intellij Configuration, Terminal Configuration

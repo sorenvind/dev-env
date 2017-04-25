@@ -1,6 +1,6 @@
 [user]
 # Please adapt and uncomment the following lines:
-  name = sv
+  name = sorenvind
   email = soren@sorenvind.dk
 [push]
   default = simple

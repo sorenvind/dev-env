@@ -1,8 +1,9 @@
 [user]
 # Please adapt and uncomment the following lines:
   name = sv
-  email = sv@issuu.com
+  email = soren@sorenvind.dk
 [push]
   default = simple
 
-core.excludesfile = ~/.gitignore_global
+[core]  
+excludesfile = ~/.gitignore_global

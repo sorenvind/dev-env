@@ -39,7 +39,7 @@ brew tap homebrew/dupes
 brew update
 brew upgrade
 brew install vim wget curl tree go node pstree python ruby make git zsh-syntax-highlighting
-brew install cmake asio python
+brew install cmake asio python awscli cocoapods
 
 # Install python packages
 pip install pygments requests virtualenv
@@ -77,5 +77,5 @@ brew cask install intel-power-gadget
 #echo "Install solarized terminal template to finish installation:"
 #echo "  Use solarized-dark-sovi.terminal as your terminal default colors."
 
-echo "Setup terminal to use Pro template, with Input Mono Extra Light 12pt and block cursor."
+echo "Setup terminal and xcode to use Pro template, with Input Mono Extra Light 12pt and block cursor."
 echo "Also (IMPORTANT): uncheck 'set locale environment variables on startup' under advanced in the terminal settings."

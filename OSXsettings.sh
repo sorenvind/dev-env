@@ -3,6 +3,18 @@
 #Enable repeat on keydown
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+#Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+#Set a shorter Delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+#Enable Trackpad touch to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
+#Enable Trackpad three finger drag
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
 #Use current directory as default search scope in Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
@@ -17,12 +29,6 @@ defaults write com.apple.dock show-process-indicators -bool true
 
 #Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-
-#Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-
-#Set a shorter Delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 #Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true

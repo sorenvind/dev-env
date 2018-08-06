@@ -34,19 +34,16 @@ then
   curl -L http://install.ohmyz.sh | sh
 fi
 
+### TODO: PIP FIX (path)
+
 # Install common sanity
-brew tap homebrew/dupes
 brew update
 brew upgrade
 brew install vim wget curl tree go node pstree python ruby make git zsh-syntax-highlighting
-brew install cmake asio python awscli cocoapods
+brew install python awscli
 
 # Install python packages
 pip install pygments requests virtualenv
-
-# Build tools++
-brew install cmake asio libconfig
-pip install cheetah
 
 # Install dot configs
 cp -f soren.vimrc ~/.vimrc
@@ -59,15 +56,24 @@ cp -f soren.gitignore_global ~/.gitignore_global
 # Install Real Apps [tm]!
 #brew cask install caskroom/homebrew-versions/java6
 brew cask install google-chrome
-brew cask install textmate
 brew cask install intellij-idea
-brew cask install virtualbox
 brew cask install vagrant
 brew cask install gitup
 brew cask install moom
 brew cask install slack
-brew cask install atom
-brew cask install intel-power-gadget
+brew cask install textmate atom visual-studio-code
+brew install httpie yamllint
+brew cask install rocket
+
+# Bleeding edge docker
+brew tap homebrew/cask-versions
+brew cask install docker-edge
+brew install kubectx
+
+# Corporate tooling
+brew cask install microsoft-office jetbrains-toolbox
+brew cask install java dbeaver-community keybase sql-operations-studio
+
 
 
 ## TODO: Moom Configuration, Intellij Configuration, Terminal Configuration
@@ -77,5 +83,5 @@ brew cask install intel-power-gadget
 #echo "Install solarized terminal template to finish installation:"
 #echo "  Use solarized-dark-sovi.terminal as your terminal default colors."
 
-echo "Setup terminal and xcode to use Pro template, with Input Mono Extra Light 12pt and block cursor."
+echo "Setup terminal and xcode to use Pro template, with Input Mono Extra Light 12pt, antialias non-bold text and block cursor."
 echo "Also (IMPORTANT): uncheck 'set locale environment variables on startup' under advanced in the terminal settings."

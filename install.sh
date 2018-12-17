@@ -41,6 +41,10 @@ brew update
 brew upgrade
 brew install vim wget curl tree go node pstree python ruby make git zsh-syntax-highlighting
 brew install python awscli
+brew install git-crypt telnet mssql-tools
+
+# k8s
+brew install kubernetes-cli kubectx
 
 # Install python packages
 pip install pygments requests virtualenv
@@ -54,16 +58,13 @@ cp -f soren.gitconfig ~/.gitconfig
 cp -f soren.gitignore_global ~/.gitignore_global
 
 # Install Real Apps [tm]!
-#brew cask install caskroom/homebrew-versions/java6
 brew cask install google-chrome
-brew cask install intellij-idea
 brew cask install vagrant
 brew cask install gitup
 brew cask install moom
 brew cask install slack
-brew cask install textmate atom visual-studio-code
+brew cask install visual-studio-code
 brew install httpie yamllint
-brew cask install rocket
 
 # Bleeding edge docker
 brew tap homebrew/cask-versions
@@ -72,7 +73,7 @@ brew install kubectx
 
 # Corporate tooling
 brew cask install microsoft-office jetbrains-toolbox
-brew cask install java dbeaver-community keybase sql-operations-studio
+brew cask install java keybase sql-operations-studio
 
 
 

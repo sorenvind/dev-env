@@ -23,3 +23,6 @@ install_utilities
 install_base
 install_apps
 install_configs
+
+echo "Setup terminal and xcode to use Pro template, with Input Mono Extra Light 12pt, antialias non-bold text and block cursor."
+echo "Also (IMPORTANT): uncheck 'set locale environment variables on startup' under advanced in the terminal settings."

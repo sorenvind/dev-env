@@ -1,9 +1,0 @@
-[user]
-# Please adapt and uncomment the following lines:
-  name = sorenvind
-  email = soren@sorenvind.dk
-[push]
-  default = simple
-
-[core]  
-excludesfile = ~/.gitignore_global

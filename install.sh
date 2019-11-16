@@ -39,15 +39,15 @@ fi
 # Install common sanity
 brew update
 brew upgrade
-brew install vim wget curl tree go node pstree python ruby make git zsh-syntax-highlighting
-brew install python awscli
+brew install vim wget curl tree go node pstree ruby make git zsh-syntax-highlighting
+brew install awscli
 brew install git-crypt telnet mssql-tools
 
 # k8s
 brew install kubernetes-cli kubectx
 
 # Install python packages
-pip install pygments requests virtualenv
+pip install pygments requests virtualenv pipenv
 
 # Install dot configs
 cp -f soren.vimrc ~/.vimrc
@@ -73,7 +73,7 @@ brew install kubectx
 
 # Corporate tooling
 brew cask install microsoft-office jetbrains-toolbox
-brew cask install java keybase sql-operations-studio
+brew cask install java keybase
 
 
 

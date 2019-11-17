@@ -1,4 +1,6 @@
 [user]
+  # TODO: Support for custom user by doing: 
+  # https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig/43654115#43654115
   name = sorenvind
   email = soren@sorenvind.dk
 [push]

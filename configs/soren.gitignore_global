@@ -1,2 +1,15 @@
+# Python
+*.pc
+*.pyc
+*.pyo
+__pycache__
+.pipenv_setup
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+
+# editors
+.vscode
 .idea
 .DS_Store

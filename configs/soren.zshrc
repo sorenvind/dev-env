@@ -53,19 +53,10 @@ plugins=(git colorize common-aliases)
 # Setup OMZ and relatives
 source $ZSH/oh-my-zsh.sh
 fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Sanity
 DEFAULT_USER="sv"
 export LC_ALL="en_US.UTF-8"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 ulimit -S -n 10000
-
-# Python
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$(pyenv init -)"
-fi
-source $HOME/.poetry/env
-
-# Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`

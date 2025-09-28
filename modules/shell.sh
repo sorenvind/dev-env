@@ -8,6 +8,6 @@ install_shell() {
     brew install zsh zsh-completions zsh-syntax-highlighting
     # zsh to be default shell..
     chsh -s /bin/zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     fi
 }

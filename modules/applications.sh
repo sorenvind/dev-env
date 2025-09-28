@@ -19,8 +19,8 @@ install_base() {
 
     echo "Installing: python"
     PYTHON="python pyenv xz zlib pyenv-virtualenv"
-    brew install $PYTHON
-    configure_python
+    #brew install $PYTHON
+    #configure_python
     
     echo "Installing: other languages"
     LANGUAGES="go node ruby java"
@@ -31,24 +31,16 @@ install_base() {
     brew install $KUBERNETES
 
     echo "Installing: dev-helpers"
-    DEVHELPERS="httpie yamllint jq parquet-tools"
+    DEVHELPERS="httpie yamllint jq"
     brew install $DEVHELPERS
 
     echo "Installing: azure"
-    AZURE="git-crypt mssql-tools azure-cli"
+    AZURE="git-crypt azure-cli"
     brew install $AZURE
 }
 
 install_apps() {
     echo "Installing: base apps"
-    BASE_APPS="google-chrome moom slack visual-studio-code"
-    brew cask install $BASE_APPS
-
-    echo "Installing: docker edge"
-    brew tap homebrew/cask-versions
-    brew cask install docker-edge
-
-    echo "Installing: corporate"
-    CORPORATE="microsoft-office jetbrains-toolbox keybase microsoft-azure-storage-explorer"
-    brew cask install $CORPORATE
+    BASE_APPS="google-chrome moom visual-studio-code"
+    brew install $BASE_APPS
 }
